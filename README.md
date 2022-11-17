@@ -35,6 +35,10 @@ docker run -d -p 33066:3306 --name $containerName -e MYSQL_ROOT_PASSWORD=$passwo
 ```
 docker exec -it $containerName mysql -p
 ```
+### Exit iterative mode
+
+Type Ctrl+p then Ctrl+q
+
 
 ## Run mongo and mongo-express
 

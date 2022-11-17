@@ -24,6 +24,17 @@ docket network create $networkName (creates docket network)
 ```
 docker run -p $clientPort:$containerPort --net $networkName $image
 ```
+## Run MySQL
+
+```
+docker run -d -p 33066:3306 --name $containerName -e MYSQL_ROOT_PASSWORD=$password mysql
+```
+
+### Mysql Iterative mode
+
+```
+docker exec -it $containerName mysql -p
+```
 
 ## Run mongo and mongo-express
 
